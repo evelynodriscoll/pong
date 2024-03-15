@@ -27,18 +27,11 @@ protected:
 
 	class UFloatingPawnMovement* PaddleMovement;
 
-	/*The pawns velocity modifier*/
-	UPROPERTY(EditAnywhere, Category = "Paddle")
-	float Velocity = 300.0f;
-
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
 private:
-	/*The Pawns Move Forward Amount per frame*/
-	float MoveForwardAmount = 0;
-
-	/*The Callback function for the MoveForward Input Axis Event*/
+	
 	virtual void MoveForward(float Amount);
 
 

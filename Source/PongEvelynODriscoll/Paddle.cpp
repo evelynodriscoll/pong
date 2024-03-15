@@ -72,7 +72,7 @@ void APaddle::MoveForward(float Amount)
 
 	FVector Location = GetActorLocation() + FVector(1.0f, 0.0f, 0.0f) * Amount * 5000 * GetWorld()->GetDeltaSeconds();
 	SetActorLocation(Location);
-	//PaddleMovement->AddInputVector(GetActorForwardVector() * Amount * 10000000000000000);
+	
 		
 }
 
